@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: var(--bgpurple);
+  font-family: raleway, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --bgpurple: #eaaa00;
+  --lightpurple: #a066cb;
+  --white: #ffffff;
+  --black: #3d3d3d;
+}
+
+#formpanel {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+}
+
+#homepagepanel {
+  margin: 0 auto;
+  /* background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%); */
+  background-color: #1f4a50;
+  width: 50vw;
+  padding: 3%;
+  align-items: center;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 3%;
+}
+
+#Leadbutton {
+  float: left;
+}
+#Logoutbutton {
+  float: right;
+}
+
+#otherpanel {
+  padding: 2rem;
+}
+
+/************* Starting CSS  **************/
+a,
+a:visited,
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0%;
+}
+
+.btn.btn-default {
+  background-color: var(--lightpurple);
+  color: var(--white);
+}
+
+.btn-link {
+  font-size: 18px;
+  color: #1c1e20;
+  font-weight: 400 !important;
+  border-bottom: 2px solid #333;
+  padding-bottom: 6px !important;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  font-size: 18px;
+  color: var(--lightpurple);
+  font-weight: 400 !important;
+  border-bottom: none;
+  padding-bottom: 6px !important;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none;
+}
+
+.heading {
+  color: var(--lightpurple);
+}
+
+.bgWhite {
+  background-color: var(--white);
+}
+
+.centerHorizontal {
+  margin: auto !important;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+.centerVertical {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.centerBoth {
+  margin: auto;
+  width: 80%;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media (max-width: 992px) {
+  .onlineTest .rightPanel .center {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .onlineTest .rightPanel .center {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: auto;
+  }
+  /* @media (max-width: 400px) {
+  .onlineTest .rightPanel .center {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 30%;
+    margin: auto;
+  } */
+}

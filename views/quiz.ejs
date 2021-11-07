@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="/css/StyleQuiz.css" rel="stylesheet">
+    <link href="/css/quiz.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<div class="container">
+  <right>
+                <p class="quiz-timer">
+                  <span id="TimerHeader" class="hide">Time Left in Seconds is : </span>
+                  <span id="Timer" class="hide"></span>
+                </p>
+  </right>
+  <left>
+              <p>Subject: <span name="subject" id="subject"><%= subject %></span></p>
+              <p>Score: <span name="updatedscore" id="score">0</span></p>
+  </left>
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+
+      <form method="POST" action="/SubmitScore/<%= subject %>">
+      <input class="hide" id="FinalScore" name="FinalScore" type=text>
+      <button type="submit" id="submit-btn" class="submit-btn btn hide">
+          Submit
+      </button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<script defer src="/js/script.js"></script>
+</body>
+</html>
