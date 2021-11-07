@@ -1,4 +1,4 @@
-##Online Assessment Platform
+## Online Assessment Platform
 This is an online assessment platform made by Kashish Ahuja and M Boopathi as the final project of Walkover University Program. The web application a robust online testing platform for conducting remote online examinations. The project is made over Java as backend, PostgreSQL as the database, and HTML, CSS, JS, Boostrap4, and AJAX as frontend.
 
 A deployed version can be checked here: https://quizzer-app-user.herokuapp.com/
